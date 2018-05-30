@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="https://d3js.org/d3.v4.min.js" /></script>
+
+	<link rel="stylesheet" type="text/css" href="platformStyles.css">
+	<link rel="stylesheet" type="text/css" href="tableStyles.css">
+
+	<title>IRONHACKS COMPARER</title>
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="tutorial">
+			<div id="tutorialContent">
+				<p>Click on a DISTRICT or any of the BARS in the GRAPHS to see how they compare to the rest.</p>
+				<button onclick="hideTutorial()">OK</button>
+			</div>
+		</div>
+
+		<p id="selectedDistrictFrame">
+		</p>
+
+		<div id="leftPanel">
+			
+			<div id="leftHeader">
+				<div id="logoContainer">
+					<p class="logoText">IRONHACKS</p>
+					<p class="logoText">COMPARER</p>
+				</div>
+			</div>
+			
+			<div id="btnsContainter">
+				<button id="crimesBtn" onClick="handleButtonClick(this.id)">CRIME RATES GRAPH</button>
+				<button id="distanceBtn" onClick="handleButtonClick(this.id)">DISTANCE GRAPH</button>
+				<button id="trafficBtn" onClick="handleButtonClick(this.id)">TRAFFIC DENSITY GRAPH</button>
+				<button id="pollutionBtn" onClick="handleButtonClick(this.id)">AIR POLLUTION GRAPH</button>
+				<button id="tableBtn" onClick="handleButtonClick(this.id)">COMPARISON TABLE</button>
+				<button id="exportBtn" onClick="fnExcelReport()">DOWNLOAD TABLE</button>
+			</div>
+		</div>
+		<div id="rightPanel">
+			<div id="map"></div>
+			
+			<div id="chartHeader">
+				<h3 id="chartTitle">TITLE</h3>
+				<p id="chartDescription">DESCRIPTION</p>
+			</div>
+			<div id="mainChartContainer">
+				<div id="mainChart"></div>
+			</div>
+
+			<div id="tableContainer">
+				<table id="comparisonTable"></table>
+			</div>
+
+		</div>
+
+	</div>
+
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC96XkMS5O1gMAUvm3D3CMHfy8mePxKc5U"></script>
+
+<script src="kdTree-min.js"></script>
+<script src="defineVariables.js"></script><!--
+<script src="geoshapesHardcoded.js"></script>-->
+<script src="mapStyle.js"></script>
+<script src="treatData.js"></script>
+<script src="mapDrawing.js"></script>
+<script src="fetchData.js"></script>
+<script src="clickHandlers.js"></script>
+<script src="drawBarsGraph.js"></script>
+<script src="populateTable.js"></script>
+<script src="fnExcelReport.js"></script>
+<script src="distancePerDistrict.js"></script>
+<script src="datasetDescriptions.js"></script>
+<script src="handleDistrictSelection.js"></script>
+<script src="websiteFlow.js"></script>
+
+</body>
+</html>

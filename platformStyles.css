@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+#container{
+	height: 100%;
+	position: relative;	
+}
+
+#leftPanel{
+	width: 320px;
+	height: 100%;
+	background-color: white;
+	float: left;
+	justify-content: center;
+	align-items: center;
+}
+
+#leftHeader{
+	height: 30%;
+}
+
+#logoContainer{
+	width: 260px;
+	margin: auto;
+	margin-top: 40%;
+}
+
+.logoText{
+	font-family: 'Lato', sans-serif;
+	color: lightblue;
+	font-size: 40px;
+}
+
+#btnsContainer{
+	width: 100%;
+	height: 60%;
+	justify-content: center;
+	align-items: center;
+}
+
+button{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border: 1px solid lightblue;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+h3{
+	margin: 10px;
+	font-family: 'Raleway', sans-serif;
+	color: lightblue;
+}
+
+p{
+	margin: 8px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	margin-bottom: 12px;
+}
+
+#rightPanel{
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#chartHeader{
+	display: none;
+	height: auto;
+	width: 400px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid lightblue;
+	position: absolute;
+	bottom: 280px;
+}
+
+#mainChartContainer{
+	display: none;
+	height: 280px;
+	width: auto;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid lightblue;
+}
+
+#mainChart{
+	display: inline-block;
+	height: 280px;
+	width: auto;
+}
+
+#tutorial{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 800;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 2px solid lightblue;
+	font-family: 'Raleway', sans-serif;
+}
+
+#tutorialContent{
+	width: 300px;
+	height: auto;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#selectedDistrictFrame{
+	width: 200px;
+	height: auto;
+	background-color: rgba(240,248,255, 0.8);
+	border: 1px solid lightblue;
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateY(0, -50%);
+	z-index: -1;
+	visibility: none;
+	text-align: center;
+	padding: 14px;
+	color: black;
+}

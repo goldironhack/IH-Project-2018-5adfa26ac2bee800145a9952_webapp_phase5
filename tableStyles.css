@@ -1,0 +1,39 @@
+#tableContainer{
+	display: none;
+	width: 800px;
+	height: 600px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid lightblue;
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+#comparisonTable{
+	width: 760px;
+	height: 560px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 20px;
+}
+
+.tableHeader{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	color: lightblue;
+}
+.tableItem{
+	width: 20%;
+	font-size: 14px;
+	text-align: right;
+}
+.tableItem1{
+	width: 20%;
+	font-size: 14px;
+	text-align: left;
+}
